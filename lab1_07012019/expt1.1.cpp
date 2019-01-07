@@ -2,8 +2,8 @@
 using namespace std;
 int main()
 {
-  int n,k[10],i=0,j;
-  cout<<"\nconversion from decimal to binary";
+  int n,k[10],a=0,b;
+  cout<<"\ndecimal to binary conversion";
   cout<<"\nEnter decimal number ";
   cin>>n;
   cout<<"\nBinary number of "<<n<<" is ";
@@ -15,10 +15,10 @@ int main()
    }
   while(n!=0)
    {
-     k[i]=n%2;
+     k[a]=n%2;
      n=n/2;
-     i++;
+     a++;
    }
-   for(j=i-1;j>=0;j--)
-    cout<<k[j];
+   for(b=a-1;b>=0;b--)
+    cout<<k[b];
 }
